@@ -1,5 +1,5 @@
 async function getServices(token) {
-    let response = await fetch('http://localhost:3000/api/services',{
+    let response = await fetch('http://arcane-cove-93049.herokuapp.com/api/services',{
     headers: {Authorization: `Bearer ${token}`} 
     });
     response = await response.json()
@@ -7,4 +7,4 @@ async function getServices(token) {
        
 }
 
-export {getServices}
+export {getServices}    

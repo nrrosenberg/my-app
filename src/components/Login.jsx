@@ -26,7 +26,7 @@ export default class Login extends Component {
         mail: this.state.mail,
         password: this.state.password
     }
-    const response = await fetch('http://localhost:3000/api/auth', {
+    const response = await fetch('http://arcane-cove-93049.herokuapp.com/api/auth', {
       method: 'POST',
       body: JSON.stringify(data),
     });

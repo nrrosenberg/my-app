@@ -1,6 +1,6 @@
 
 async function getPosts(token) {
-    const response = await fetch('http://localhost:3000/api/posts',{
+    const response = await fetch('http://arcane-cove-93049.herokuapp.com/api/posts',{
     headers: {Authorization: `Bearer ${token}`} 
     });
     let {data, links} = await response.json()
@@ -12,7 +12,7 @@ async function getPosts(token) {
 }
 
 async function getTopPosts(token) {
-    const response = await fetch('http://localhost:3000/api/posts/top',{
+    const response = await fetch('http://arcane-cove-93049.herokuapp.com/api/posts/top',{
     headers: {Authorization: `Bearer ${token}`} 
     });
     let {data, links} = await response.json()
@@ -26,14 +26,14 @@ async function getTopPosts(token) {
 }
 
 async function getComments(token, postId) {
-    const response = await fetch(`http://localhost:3000/api/posts/comments/${postId}`,{
+    const response = await fetch(`http://arcane-cove-93049.herokuapp.com/api/posts/comments/${postId}`,{
     headers: {Authorization: `Bearer ${token}`} 
     });
     return response.json();
 }
 
 async function getFreelancerName(token, freelancerId) {
-    let response = await fetch(`http://localhost:3000/api/freelancers/show/${freelancerId}`,{
+    let response = await fetch(`http://arcane-cove-93049.herokuapp.com/api/freelancers/show/${freelancerId}`,{
     headers: {Authorization: `Bearer ${token}`} 
     });
     let {data} = await response.json().then();

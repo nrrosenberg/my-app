@@ -1,5 +1,5 @@
 async function getOffers(token) {
-    const response = await fetch('http://localhost:3000/api/offers',{
+    const response = await fetch('http://arcane-cove-93049.herokuapp.com/api/offers',{
     headers: {Authorization: `Bearer ${token}`} 
     });
     let {data, links} = await response.json()
