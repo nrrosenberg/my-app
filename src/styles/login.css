@@ -1,0 +1,32 @@
+input {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%;
+    border-radius: 3px;
+    border-style: solid;
+    background: none;
+    color: whitesmoke;
+    border-color: lightskyblue;
+}
+
+input[type=button]:hover {
+    color: black;
+    border-color: white;
+    background-color: lightskyblue;
+}
+.card {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border-color:  lightskyblue;
+    border-style: solid;
+    color: lightskyblue;
+}
+
+.errorMsg {
+    color: red;
+}

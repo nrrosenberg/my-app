@@ -1,0 +1,30 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-color:  lightskyblue;
+    border-radius: 10px;
+    border-style: solid;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    padding: 6px;
+    text-align: center;
+    color: whitesmoke;
+    border-color:  lightskyblue;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.table-img {
+    width: 70px;
+    height: 70px;
+}
+
+
